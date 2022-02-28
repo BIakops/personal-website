@@ -1,6 +1,11 @@
+import FootComp from "./FootComp";
+import HeaderComp from "./HeaderComp";
+
 const layout = ({props}: any) => {
-    return ( <div className = " bg-slate-600 text-white py-2">
-        {props}
+    return ( <div>
+        <HeaderComp/>
+            {props}
+        <FootComp/>
     </div>);
 }
 export default layout;
