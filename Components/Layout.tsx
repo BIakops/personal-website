@@ -1,11 +1,16 @@
-import FootComp from "./FootComp";
-import HeaderComp from "./HeaderComp";
+import FootComp from "./FootComp"
+import HeaderComp from "./HeaderComp"
 
-const layout = ({props}: any) => {
-    return ( <div>
-        <HeaderComp/>
-            {props}
-        <FootComp/>
-    </div>);
-}
-export default layout;
+const Layout = ({ children } : any) => {
+    return (
+        <div>
+            <HeaderComp/>
+            <div>
+                {children}
+            </div>
+            <FootComp/>
+        </div>
+    )
+    }
+    
+export default Layout

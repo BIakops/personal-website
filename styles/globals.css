@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .sideBar-Icon{
+        @apply relative flex justify-center items-center h-12 w-24 mt-2 mb-2 mx-auto bg-secondary-default text-white hover:bg-hovering-default hover:text-black transition-all
+        rounded-3xl hover:rounded-xl duration-300 ease-linear;
+
+    }
+    .sidebar-tooltip{
+        @apply absolute w-auto p-2 m-2 min-w-max right-16 rounded-md shadow-md text-white bg-secondary-default text-xs font-bold transition-all duration-300 scale-0 origin-right;
+    }
+    .menu-Icon{
+        @apply absolute flex items-center justify-center h-12 w-24 mt-2 mb-2 mx-auto bg-secondary-default text-white hover:bg-hovering-default hover:text-primary-default transition-all
+         duration-300 ease-linear rounded-3xl hover:rounded-xl shadow-lg;
+
+    }
+    .startingText{
+        font-family: 'Work Sans', sans-serif;
+        text-underline-offest:100px;
+        @apply font-light text-center text-whiteIsh-default italic text-6xl duration-1000 ease-in-out underline;
+        
+    }
+    .IntermiediateText{
+        font-family: 'Work Sans', sans-serif;
+        text-underline-offest:100px;
+        @apply font-light text-center text-whiteIsh-default  text-6xl duration-1000 ease-in-out ;
+        
+    }
+}

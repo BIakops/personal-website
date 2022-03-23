@@ -1,0 +1,23 @@
+.gridL {
+    display: grid;
+    grid-template-areas: "Img  Text Text"
+                        "Text-2 Text-2 Text-2"
+                        "Card1-start Card1-start Space1" 
+                        "Card1-stop Card1-stop Space1" 
+                        "Space2 Card2 Card2";
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+.gridL img {
+    grid-area: Img;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.gridL p {
+    grid-row: Text/Text-2-end;
+    padding: 1rem;
+    background-color: #f2f2f2;
+}
